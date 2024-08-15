@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family :'Segoe UI';*/
+    font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color : #172014;
+}
+
+.main {
+    width : 100%;
+    height : fit-content;
+    color : white;
+    display : flex;
+    flex-direction : column;
+    flex-wrap : wrap;
+    align-items : center;
+}
+
+.box {
+    height : 500px;
+    display : flex;
+    flex-direction : column;
+    justify-content : space-evenly;
+}
+
+section {
+    width : 250px;
+    background-color : #222;
+    color : rgba(255, 255, 255, 0.404);
+    padding : 5px;
+}
+
+select {
+    width : 100%;
+    height : 40px;
+    background-color : inherit;
+    color : rgba(255, 255, 255, 0.717);
+    border : none;
+    outline: none; 
+    font-size: 22px;
+}
+/* select {
+  all: unset; 
+  appearance: none; 
+  background: none; 
+  border: none; 
+  padding: 0; 
+  margin: 0; 
+  font: inherit; 
+  color: inherit;
+} */
+
+.box p {
+    padding-left : 5px;
+    font-size : 9px;
+}
+
+button {
+    width : 90px;
+    height : 35px;
+    color : rgba(255, 255, 255, 0.813);
+    background-color : #38B8A6;
+    border : none;
+    border-radius : 5px;
+}
+
+.card {
+    width : 250px;
+    height : 450px;
+    background-color : rgba(0, 92, 0, 0.861);
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    border-radius : 10px;
+    margin : 50px;
+    * {
+        padding-top : 20px;
+    }
+}
+
+.card p {
+    padding-top : 0;
+    font-size : 12px;
+}
+
+.card img {
+    height : 50px;
+}
+
+.card span {
+    display : flex;
+    align-items : end;
+    gap : 10px;
+}
+
+.cards {
+    display : flex;
+    flex-wrap : wrap;
+}

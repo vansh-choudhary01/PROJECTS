@@ -1,0 +1,213 @@
+* {
+    padding : 0;
+    margin : 0;
+}
+
+body {
+    padding : 0 34%;
+    /* padding-right : 68%; */
+    background-color : lightslategray;
+}
+
+.main {
+    padding : 15px 13px;
+    background-color : white;
+}
+
+.info {
+    height : 40px;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    /* background-color: blueviolet; */
+}
+
+.info img {
+    height : 100%;
+}
+
+.info #second {
+    height : 60%;
+}
+
+.topic {
+    display : flex;
+    justify-content : space-between;
+    /* align-items : center; */
+}
+
+.topic h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position : relative;
+    right : 29%;
+    font-weight : 650;
+    opacity : .8;
+}
+
+.topic .smallbox{
+    height : 23px;
+    width : 7px;
+    border-radius : 20px;
+    background-color : rgb(254, 115, 46);
+}
+
+.topic button {
+    background-color : inherit;
+    border : 1px solid black;
+    width : 80px;
+    border-radius : 7px;
+}
+
+.topic button span {
+    color : rgb(254, 115, 46);
+}
+
+.container {
+    margin-top : 20px;
+    width : 100%;
+    height : 430px;
+    display : inline-grid;
+    grid-template-columns :repeat(2, 1fr);
+    grid-template-rows : repeat(2, 1fr);
+    row-gap : 13px;
+    column-gap : 13px;
+    color : white;
+}
+
+.container .card {
+    background-image : url(img/daman-lottery_background-2c86d0eb.png);
+    background-size : auto;
+    background-position : center;
+    background-repeat : no-repeat;
+    border-radius : 10px;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    padding : 10px;
+
+}
+
+.container img{
+    width : 70%;
+}
+
+.container .card button {
+    border : 1px solid white;
+    color : white;
+    font-weight : 800;
+    border-radius : 20px;
+    width : 50%;
+    height : 15%;
+    background-color : inherit;
+    position : relative;
+    left : 25%;
+}
+
+.ad {
+    background-image : url(img/daman-lottery_background-2c86d0eb.png);
+    background-size : 150% 200%;
+    background-position: center;
+    margin-top : 20px;
+    width : 100%;
+    height : 120px;
+    color : white;
+    border-radius : 10px;
+    display : flex;
+    align-items : center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom : 100px;
+}
+
+.ad img{
+    height : 80%;
+}
+
+.ad .assistant {
+    height : 80%;
+    padding : 10px;
+    font-size: small;
+    display : flex;
+    flex-direction : column;
+    justify-content : space-between;
+}
+
+.ad .assistant p{
+    background-color : rgba(0,0,0,0.1);
+    height : 35px;
+    width : 90%;
+    border-radius : 30px;
+
+    display : flex;
+    align-items : center;
+
+    text-align : center;
+    line-height : 15px;
+}
+
+.ad .assistant button {
+    border : none;
+    width : 100px;
+    height : 25%;
+    background-color : rgb(255, 187, 0);
+    border-radius : 15px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight : 600;
+    color : white;
+    box-shadow: inset 1px -5px 10px rgba(208, 118, 118, 0.92);
+}
+
+.nav {
+    /* background-color :rgb(255, 187, 0); */
+    display : flex;
+    justify-content : space-between;
+    /* align-items: end; */
+    height : 50px;
+    width : 31vw;
+    
+    font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align : center;
+    background-image : url(img/tabBarBg-0d05851f.png);
+    background-size : cover;
+    position : fixed;
+    bottom : 0;
+    padding : 0 3px;
+    padding-top : 20px;
+}
+
+.nav .icon {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+}
+
+.nav .icon {
+    width : 100%;
+    height : 100%;
+}
+
+.nav img{
+    height : 50%;
+}
+
+.nav h5{
+    opacity : .5;
+}
+
+.nav .hera {
+    background-color: rgb(255, 108, 108);
+    position : absolute;
+    bottom : 30px;
+    width: 15%;
+    border-radius : 50%;
+    height : 80%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.nav .pro h5{
+    position : relative;
+    top : 13px;
+}

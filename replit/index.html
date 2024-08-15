@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Flask Repl - Replit</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <nav>
+                <img src="img/logo.png" alt="">
+                <div class="links">
+                    <a href="#" id="first">Features</a>
+                    <a href="#">Teams</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Guides</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="btn">
+                    <a href="#">Log in</a>
+                    <a href="#" id="sec">Start building</a>
+                </div>
+            </nav>
+        </header>
+        <div class="home">
+            <div class="content">
+                <div class="file">
+                    <div class="imgs">
+                        <input type="radio" id=".gitignore" name="file">
+                        <label for=".gitignore"><i class="fa-regular fa-file"></i>.gitignore</label>
+                        <input type="radio" id="image_2.png" name="file">
+                        <label for="image_2.png"><i class="fa-regular fa-image"></i>image_2.png</label>
+                        <input type="radio" id="image_3.png" name="file">
+                        <label for="image_3.png"><i class="fa-regular fa-image"></i>image_3.png</label>
+                        <input type="radio" id="image_4.png" name="file">
+                        <label for="image_4.png"><i class="fa-regular fa-image"></i>image_4.png</label>
+                        <input type="radio" id="image_5.png" name="file">
+                        <label for="image_5.png"><i class="fa-regular fa-image"></i>image_5.png</label>
+                        <input type="radio" id="image_6.png" name="file">
+                        <label for="image_6.png"><i class="fa-regular fa-image"></i>image_6.png</label>
+                        <input type="radio" id="image.png" name="file">
+                        <label for="image.png"><i class="fa-regular fa-image"></i>image.png</label>
+                        <input type="radio" id="main.py" name="file">
+                        <label for="main.py"><i class="fa-brands fa-python"></i>main.py</label>
+                        <input type="radio" id="README.md" name="file">
+                        <label for="README.md"><i class="fa-regular fa-map"></i>README.md</label>
+                    </div>
+                    <div class="files">
+                        <h5>Packager files</h5>
+                        <input type="radio" id=".pythonlibs" name="file">
+                        <label for=".pythonlibs"><i class="fa-regular fa-folder"></i>.pythonlibs</label>
+                        <input type="radio" id="poetry.lock" name="file">
+                        <label for="poetry.lock"><i class="fa-brands fa-python"></i>poetry.lock</label>
+                        <input type="radio" id="pyproject.toml" name="file">
+                        <label for="pyproject.toml"><i class="fa-brands fa-python"></i>pyproject.toml</label>
+                    </div>
+                    <div class="config">
+                        <h5>Config files</h5>
+                        <input type="radio" id=".replit" name="file">
+                        <label for=".replit"><i class="fa-regular fa-map"></i>.replit</label>
+                    </div>
+                </div>
+                <div class="data">
+                    <div id="README">
+                        <div id="btn"><button>README.md</button></div>
+                        <div class="info">
+                            <hr>
+                            <h2>Replicate this UI & API call to show data.</h2>
+                            <hr>
+                            <h3>Note: You can create this anywhere as long as you can host it and give us the URL to verify. Replit is just an option. You can use any technology you want. Flask is an option.</h3>
+                            <hr>
+                            <img src="img/readme1.png" alt="">
+                            <h3>DO NOT IMPROVE ANYTHING. CREATE IT AS IT IS. ITS A TEST TO SEE HOW ACCURATELY CAN YOU REPRODUCE A DESIGN + TO TEST YOUR PROFICIENCY IN USING APIs.</h3>
+                            <hr>
+                            <h4>Dropdown options for origin should be</h4>
+                            <ol>
+                                <li>JFK</li>
+                                <li>DEL</li>
+                                <LI>SYD</LI>
+                                <LI>BOM</LI>
+                                <LI>BNE</LI>
+                                <LI>BLR</LI>
+                            </ol>
+                            <img src="img/readme2.png" alt="">
+                            <h4>And for cabin selection</h4>
+                            <ol>
+                                <li>Economy</li>
+                                <li>Business</li>
+                                <li>First</li>
+                            </ol>
+                            <h4>You can ignore the "Pro Filters" UI element (optional)</h4>
+                            <h2>API Signature</h2>
+                            <hr>
+                            <h4>I have allowed the CORS for the interview purpose for this API.</h4>
+                            <p>You need to edit this request according to user input, only change the three parameters supplied from the UI.</p>
+                            <h3>Request</h3>
+                            <hr>
+                            <p>import requests
+
+                                headers = {
+                                    'accept': 'application/json, text/plain, */*',
+                                    'accept-language': 'en-US,en;q=0.9,hi;q=0.8',
+                                    'cache-control': 'no-cache',
+                                    'content-type': 'application/json',
+                                    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+                                }
+                                
+                                json_data = {
+                                    'origin': 'SYD',
+                                    'destination': 'JFK',
+                                    'partnerPrograms': [
+                                        'Air Canada',
+                                        'United Airlines',
+                                        'KLM',
+                                        'Qantas',
+                                        'American Airlines',
+                                        'Etihad Airways',
+                                        'Alaska Airlines',
+                                        'Qatar Airways',
+                                        'LifeMiles',
+                                    ],
+                                    'stops': 2,
+                                    'departureTimeFrom': '2024-07-09T00:00:00Z',
+                                    'departureTimeTo': '2024-10-07T00:00:00Z',
+                                    'isOldData': False,
+                                    'limit': 302,
+                                    'offset': 0,
+                                    'cabinSelection': [
+                                        'Business',
+                                    ],
+                                    'date': '2024-07-09T12:00:17.796Z',
+                                }
+                                
+                                response = requests.post('https://cardgpt.in/apitest', headers=headers, json=json_data)
+                                print(response.text)</p>
+                                <h2>Response JSON</h2>
+                                <p>{
+                                    "data": [
+                                        {
+                                            "min_business_miles": null,
+                                            "min_business_tax": null,
+                                            "min_economy_miles": 53500,
+                                            "min_economy_tax": 189,
+                                            "min_first_miles": null,
+                                            "min_first_tax": null,
+                                            "partner_program": "KLM"
+                                        },
+                                        {
+                                            "min_business_miles": 144600,
+                                            "min_business_tax": 177,
+                                            "min_economy_miles": 55200,
+                                            "min_economy_tax": 158,
+                                            "min_first_miles": null,
+                                            "min_first_tax": null,
+                                            "partner_program": "Qantas"
+                                        }
+                                    ]
+                                }</p>
+                                <h3>The Response should be rendered as following after user clicks on "Search"</h3>
+                                <img src="img/readme3.png" alt="">
+                                <p>You can put any dummy logo on top of them</p>
+                                <p>If there is no data in API response, just write "Try another search route."</p>
+                                <h3>Finally:</h3>
+                                <h4>Clicking on Run in Replit should display the website on the right panel "Webview"</h4>
+                                <img src="img/readme4.png" alt="">
+                        </div>
+                    </div>
+                    <!-- <div id=".gitignore"></div>
+                    <div id="image_2.png"></div>
+                    <div id="image_3.png"></div>
+                    <div id="image_4.png"></div>
+                    <div id="image_5.png"></div>
+                    <div id="image_6.png"></div>
+                    <div id="image.png"></div>
+                    <div id="main.py"></div>
+                    <div id=".pythonlibs"></div>
+                    <div id="poetry.lock"></div>
+                    <div id="pyproject.toml"></div>
+                    <div id=".replit"></div> -->
+                </div>
+            </div>
+            <div class="profile">
+                <div class="btns">
+                    <div id="first">Fork</div>
+                    <div id="second">17</div>
+                    <div id="third"><i class="fa-regular fa-heart"></i> 0</div>
+                    <div id="fourth">Copy link</div>
+                    <div id="fifth"><i class="fa-solid fa-ellipsis"></i></div>
+                </div>
+                <div class="comp">
+                    <img src="https://replit.com/cdn-cgi/image/width=64,quality=80,format=auto/https://storage.googleapis.com/replit/images/1664554393816_7a325672b4ec2f7edc93e9b99b90daff.jpeg" alt="">
+                    <h2>Flask Repl</h2>
+                </div>
+                <div class="id">
+                    <img src="https://www.gravatar.com/avatar/fda1508efd93f13abd360dbefd7dd102?d=blank&s=256" alt="">
+                    <p>mkagenius</p>
+                </div>
+                <p>Jul 9,2024 <span>.</span> Made with <a href="#">Flask</a></p>
+            </div>
+        </div>
+        <footer>
+            <div class="copyright">
+                <img src="img/logo.png" alt="">
+                <p>Copyright &copy; 2024 Replit, Inc. All rights reserved.</p>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="info">
+                <div class="first">
+                    <div class="line">
+                        <p><b>Replit</b></p>
+                        <a href="#">Mobile app</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Careers</a>
+                        <a href="#">About</a>
+                        <a href="#">Pricing</a>
+                    </div>
+                    <div class="line">
+                        <p><b>Legal</b></p>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Replit Teams Agreement</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Subprocessors</a>
+                        <a href="#">DPA</a>
+                        <a href="#">US Student DPA</a>
+                        <a href="#">Student Privacy</a>
+                        <a href="#">Report Abuse</a>
+                    </div>
+                    <div class="line">
+                        <p><b>Features</b></p>
+                        <a href="#">IDE</a>
+                        <a href="#">Multiplayer</a>
+                        <a href="#">Deployments</a>
+                        <a href="#">Replit AI</a>
+                        <a href="#">Bounties</a>
+                    </div>
+                    <div class="line">
+                        <p><b>Handy links</b></p>
+                        <a href="#">Languages</a>
+                        <a href="#">Docs</a>
+                        <a href="#">Support</a>
+                        <a href="#">Forum</a>
+                        <a href="#">Status</a>
+                        <a href="#">Import from Glitch</a>
+                        <a href="#">Import from Heroku</a>
+                        <a href="#">Copilot alternative</a>
+                        <a href="#">Brand Kit</a>
+                        <a href="#">Partnerships</a>
+                    </div>
+                </div>
+                <div class="second">
+                    <p><b>Programming languages</b></p>
+                    <div class="line">
+                        <a href="#">Python</a>
+                        <a href="#">JavaScript</a>
+                        <a href="#">TypeScript</a>
+                        <a href="#">Node.js</a>
+                        <a href="#">Nix</a>
+                        <a href="#">HTML,CSS,JS</a>
+                        <a href="#">C++</a>
+                        <a href="#">Golang</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

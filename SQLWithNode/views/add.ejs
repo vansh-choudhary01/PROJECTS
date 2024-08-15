@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW USER</title>
+</head>
+<body>
+    <h2>Welcome to our Family</h2>
+    <h3>see you in the leaderboard</h3>
+    <% if(add == "add" ) {%> 
+        <p style="color: green;">Congrats you are a member of our family</p>
+    <% } else if(add == "notAdd") { %>
+        <p style="color: red;">Dublicate entery. Please change your info</p>
+    <% } %>
+    <br>
+    <form method="post" action="/user">
+        <input type="text" placeholder="Enter Username" name="name">
+        <input type="text" placeholder="Enter your email" name="email">
+        <input type="password" placeholder="Enter your password" name="password">
+        <button>Submit</button>
+    </form>
+    <a href="/user">back to home</a>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<div id="README.md">
+                        <button>README.md</button>
+                        <div class="info">
+                            <h2>Replicate this UI & API call to show data.</h2>
+                            <hr>
+                            <h3>Note: You can create this anywhere as long as you can host it and give us the URL to verify. Replit is just an option. You can use any technology you want. Flask is an option.</h3>
+                            <hr>
+                            <img src="img/readme1.png" alt="">
+                            <h4>Dropdown options for origin should be</h4>
+                            <ol>
+                                <li>JFK</li>
+                                <li>DEL</li>
+                                <LI>SYD</LI>
+                                <LI>BOM</LI>
+                                <LI>BNE</LI>
+                                <LI>BLR</LI>
+                            </ol>
+                            <img src="img/readme2.png" alt="">
+                            <h4>And for cabin selection</h4>
+                            <ol>
+                                <li>Economy</li>
+                                <li>Business</li>
+                                <li>First</li>
+                            </ol>
+                            <h4>You can ignore the "Pro Filters" UI element (optional)</h4>
+                            <h2>API Signature</h2>
+                            <hr>
+                            <h4>I have allowed the CORS for the interview purpose for this API.</h4>
+                            <p>You need to edit this request according to user input, only change the three parameters supplied from the UI.</p>
+                            <h3>Request</h3>
+                            <hr>
+                            <p>import requests
+
+                                headers = {
+                                    'accept': 'application/json, text/plain, */*',
+                                    'accept-language': 'en-US,en;q=0.9,hi;q=0.8',
+                                    'cache-control': 'no-cache',
+                                    'content-type': 'application/json',
+                                    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+                                }
+                                
+                                json_data = {
+                                    'origin': 'SYD',
+                                    'destination': 'JFK',
+                                    'partnerPrograms': [
+                                        'Air Canada',
+                                        'United Airlines',
+                                        'KLM',
+                                        'Qantas',
+                                        'American Airlines',
+                                        'Etihad Airways',
+                                        'Alaska Airlines',
+                                        'Qatar Airways',
+                                        'LifeMiles',
+                                    ],
+                                    'stops': 2,
+                                    'departureTimeFrom': '2024-07-09T00:00:00Z',
+                                    'departureTimeTo': '2024-10-07T00:00:00Z',
+                                    'isOldData': False,
+                                    'limit': 302,
+                                    'offset': 0,
+                                    'cabinSelection': [
+                                        'Business',
+                                    ],
+                                    'date': '2024-07-09T12:00:17.796Z',
+                                }
+                                
+                                response = requests.post('https://cardgpt.in/apitest', headers=headers, json=json_data)
+                                print(response.text)</p>
+                                <h2>Response JSON</h2>
+                                <p>{
+                                    "data": [
+                                        {
+                                            "min_business_miles": null,
+                                            "min_business_tax": null,
+                                            "min_economy_miles": 53500,
+                                            "min_economy_tax": 189,
+                                            "min_first_miles": null,
+                                            "min_first_tax": null,
+                                            "partner_program": "KLM"
+                                        },
+                                        {
+                                            "min_business_miles": 144600,
+                                            "min_business_tax": 177,
+                                            "min_economy_miles": 55200,
+                                            "min_economy_tax": 158,
+                                            "min_first_miles": null,
+                                            "min_first_tax": null,
+                                            "partner_program": "Qantas"
+                                        }
+                                    ]
+                                }</p>
+                                <h3>The Response should be rendered as following after user clicks on "Search"</h3>
+                                <img src="img/readme3.png" alt="">
+                                <p>You can put any dummy logo on top of them</p>
+                                <p>If there is no data in API response, just write "Try another search route."</p>
+                                <h3>Finally:</h3>
+                                <h4>Clicking on Run in Replit should display the website on the right panel "Webview"</h4>
+                                <img src="img/readme4.png" alt="">
+                        </div>
+                    </div>

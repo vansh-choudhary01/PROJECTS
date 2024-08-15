@@ -1,0 +1,519 @@
+* {
+    padding : 0;
+    margin : 0;
+}
+
+body {
+    padding : 0 34%;
+    /* padding-right : 68%; */
+    background-color : gray;
+    font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    /* background-color : rgb(255, 142, 142); */
+    background-color :rgb(247, 247, 255);
+    padding : 15px;
+    position : relative;
+}
+
+.nav {
+    width : 385px;
+    height : 40px;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    padding : 10px;
+    color : white;
+    background-color :rgb(249, 91, 91);
+    position : fixed;
+    margin-left : -15px;
+    margin-top : -15px;
+    z-index : 9999;
+    box-shadow: inset -5px -5px 30px rgba(255, 255, 255, 0.5);
+}
+
+.nav img {
+    height : 120%;
+}
+
+.nav .help {
+    height : 100%;
+}
+
+.nav .help img {
+    height : 80%;
+    margin : 5px;
+}
+
+.userscreen {
+    padding-top : 60px;
+    box-shadow : inset 100px 40px 100px rgb(249, 91, 91),inset -100px 40px 100px rgb(249, 91, 91), 15.2px 2px 1px rgb(249, 91, 91), -15.2px 2px 1px rgb(249, 91, 91);
+}
+
+.wallet {
+    height : 110px;
+    background-color :white;
+    border-radius : 30px;
+    padding : 20px;
+    display : flex;
+    flex-direction : column;
+    justify-content : space-between;
+}
+
+.wallet img {
+    height : 100%;
+}
+
+.wallet .balance{
+    height : 25%;
+    font-size : 20px;
+    font-weight : 600;
+    display : flex;
+    justify-content : center;
+}
+
+.wallet .balance img {
+    height : 80%;
+    position : relative;
+    left : 30px;
+}
+
+.wallet .balanceinfo {
+    height : 20%;
+    display : flex;
+    justify-content : center;
+    color : rgb(122, 122, 122);
+}
+
+.wallet .btns {
+    height : 40%;
+    display : flex;
+    justify-content : space-around;
+}
+
+.wallet .btns button {
+    height : 100%;
+    width : 40%;
+    border-radius : 30px;
+    color : white;
+    font-weight : 900;
+    border : none;
+}
+
+.wallet .btns #red {
+    background-color :rgb(249, 91, 91);
+}
+
+.wallet .btns #green {
+    background-color :rgb(0, 186, 84);
+}
+
+.warn {
+    height : 35px;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    padding : 3px 10px;
+    font-size : 13px;
+    margin : 20px 0;
+    border-radius : 30px;
+    background-color : white;
+}
+
+.warn p {
+    width : 65%;
+}
+
+.warn img {
+    height : 60%;
+}
+
+.warn button {
+    height : 80%;
+    width : 23%;
+    background-color :rgb(249, 91, 91);
+    color : white;
+    border : none;
+    border-radius : 30px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+
+}
+
+.warn button img {
+    height : 50%;
+}
+
+.watches {
+    height : 120px;
+    background-color : white;
+    border-radius : 15px;
+    display : flex;
+}
+
+.watches .watch {
+    width : 25%;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    font-size : 80%;
+    font-weight : 600;
+    color : gray;
+    border-radius : 15px;
+}
+
+.watches .watch img {
+    width : 50%;
+}
+
+.watches .first {
+    background-color :rgb(254, 97, 97);
+    color : white;
+}
+
+.timer {
+    height : 108px;
+    background-image: url(img/wingoissue-0c200440.png);
+    background-size : cover;
+    margin : 20px 0;
+    display : flex;
+    color : white;
+}
+
+.howtoplay {
+    width : 50%;
+    padding : 10px 10px;
+    display : flex;
+    flex-direction : column;
+    justify-content : space-between;
+}
+
+.howtoplay img {
+    height : 100%;
+}
+
+.howtoplay button {
+    height : 25%;
+    width : 100%;
+    background-color : inherit;
+    border : 1px solid white;
+    border-radius : 20px;
+    color : white;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.howtoplay p {
+    font-weight : 600;
+    font-size : 70%;
+    padding-left : 10px;
+}
+
+.howtoplay .imgs {
+    height : 40%;
+    display : flex;
+    justify-content : space-around;
+    align-items : center;
+}
+
+.howtoplay .imgs img {
+    height : 80%;
+}
+
+.timer .remainingtime {
+    width : 50%;
+    text-align : end;
+    padding : 10px 10px;
+    display : flex;
+    flex-direction : column;
+    justify-content : space-between;
+}
+
+.timer .remainingtime .secs{
+    display : flex;
+    justify-content : flex-end;
+}
+
+.timer .remainingtime .secs .sec {
+    background-color : white;
+    color : black;
+    margin : 4px;
+    padding : 5px;
+    font-weight : 700;
+}
+
+.last5 {
+    background-color : rgb(255, 255, 255);
+    height : 300px;
+    padding : 10px;
+    border-radius : 10px;
+    position : relative;
+    width : 94%;
+}
+
+.last5 .colors {
+    height : 14%;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    margin-bottom : 10px;
+}
+
+.last5 .colors div {
+    background-color : violet;
+    width : 30%;
+    height : 100%;
+    color : white;
+    border-radius : 10px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.last5 .colors .green {
+    background-color : rgb(0, 169, 76);
+    border-top-left-radius: 0;
+    border-bottom-right-radius : 0;
+}
+
+.last5 .colors .red {
+    background-color :rgb(249, 91, 91);
+    border-top-right-radius: 0;
+    border-bottom-left-radius : 0;
+}
+
+.last5 .bolls {
+    height : 45%;
+    background-color : rgba(164, 164, 255, 0.1);
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : space-around;
+    border-radius : 10px;
+    margin : 15px 0;
+}
+
+.last5 .bolls img{
+    height : 43%;
+    margin : 5px;
+}
+
+.last5 .multiply {
+    height : 13%;
+    margin : 10px 0;
+    display : flex;
+    justify-content : space-between;
+}
+
+.last5 .multiply button {
+    width : 25%;
+    border : 1px solid rgb(249, 91, 91); 
+    color : rgb(249, 91, 91);
+    border-radius : 10px;
+    font-size : 15px;
+    background-color : inherit;
+}
+
+.last5 .multiply div {
+    padding : 8px;
+    border-radius : 10px;
+    background-color :rgba(164, 164, 255, 0.13);
+    font-size : 14px;
+    font-weight : 500;
+    opacity : 0.6;
+}
+
+.last5 .bigsmall {
+    height : 14%;
+    display : flex;
+    justify-content : center;
+}
+
+.last5 .bigsmall div{
+    width : 43%;
+    border : 1px solid white;
+    color : white;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    font-size : 17px;
+    font-weight : 400;
+}
+
+.last5 .bigsmall .big {
+    border-top-left-radius : 50px;
+    border-bottom-left-radius : 50px;
+    background-color :rgb(255, 187, 0);
+}
+
+.last5 .bigsmall .small {
+    border-top-right-radius : 50px;
+    border-bottom-right-radius : 50px;
+    background-color : rgb(56, 179, 255);
+}
+
+.history {
+    /* background-color :rgb(255, 187, 0); */
+    height : 40px;
+    margin : 15px 0;
+    display : flex;
+    justify-content : space-between;
+}
+
+.history button {
+    height : 100%;
+    width : 30%;
+    border-radius : 10px;
+    border : none;
+    font-size : 15px;
+    font-weight : 600;
+    opacity : 1;
+    color :rgba(78, 78, 78, 0.5);
+    font-family : inherit;
+    background-color : white;
+}
+
+.history #first {
+    background-color :rgb(249, 91, 91);
+    color : white;
+}
+
+.released {
+    background-color : white;
+    display :flex;
+    border-radius : 10px;
+    z-index : 99;
+    overflow : hidden;
+    height : 470px;
+}
+
+.released div div {
+    padding : 4px;
+}
+
+.released ul{
+    list-style-type : none;
+    /* padding-left : 0; */
+    padding : 5px;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+}
+
+.released ul li {
+    padding : 10px;
+}
+
+.released .col li {
+    display : flex;
+    margin : 6.6px;
+}
+
+.released .col li div {
+    /* background-color : yellow; */
+    margin-right : 5px;
+    border-radius : 50%;
+}
+
+.released .heading {
+    padding : 0 8.7px;
+    height : 45px;
+    background-color :rgb(249, 91, 91);
+    color : white;
+    font-weight : 600;
+    font-size : 15px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.released .num ul {
+    font-size : 25px;
+    font-weight : 700;
+    li {
+        padding : 4.3px 0;
+    }
+}
+
+.foot {
+    margin : 20px 0;
+    padding : 20px 50px;
+    background-color :white;
+    display : flex;
+    justify-content : space-evenly;
+    align-items : center;
+    border-radius : 10px;
+    font-size : small;
+    color :rgba(0, 0, 0, 0.5);
+}
+
+.foot button{
+    padding : 10px;
+    text-align : center;
+    border : none;
+    border-radius : 5px;
+    span {
+        font-size : 18px;
+    }
+}
+
+.foot #second {
+    background-color :rgb(249, 91, 91);
+    color : white;
+}
+
+.fgreen {
+    color :rgb(0, 169, 76);
+}
+
+.fred {
+    color :rgb(249, 91, 91);
+}
+
+.bggreen {
+    background-color :rgb(0, 169, 76);
+}
+
+.bgred {
+    background-color :rgb(249, 91, 91);
+}
+
+.bgviolet {
+    background-color : violet;
+}
+
+.last5sec {
+    display : none;
+}
+
+.l5s {
+    height : 94%;
+    width : 94.5%;
+    position : absolute;
+    background-color :rgba(0, 0, 0, 0.6);
+    z-index : 100;
+    border-radius : 10px;
+    border-top-left-radius : 0;
+    border-top-right-radius : 0;
+    display : flex;
+    justify-content : space-evenly;
+    align-items : center;
+}
+
+.l5s .repeat{
+    background-color :white;
+    height : 60%;
+    width : 35%;
+    z-index : 999;
+    border-radius : 15px;
+    color :rgb(249, 91, 91);
+    font-weight : 700;
+    font-size : 170px;
+    font-family : Arial, Helvetica, sans-serif;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
